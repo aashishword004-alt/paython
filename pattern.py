@@ -18,3 +18,10 @@ for i in range(1,6):
 
 print("///////////////////////////")
 
+
+n = int(input('Enter the Number : '))
+
+for i in range(1,n):
+  for j in range(j,i):
+     print(j,end="") 
+print()
