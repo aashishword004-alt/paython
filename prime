@@ -11,9 +11,22 @@ for i in range(2,n):
           
           break
 
+
 if prime == True :
     print('Prime Number ' , n)
 else:
     print('number is not prime' , n)
             
        
+
+n = 100
+prinm = True
+
+for i in range(2,n):
+    if n%i == 0: 
+     prinm = False
+
+if prinm == True:
+     print("Prime number " , i)
+else: 
+   print("Not prime ")
