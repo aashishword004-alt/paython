@@ -1,0 +1,9 @@
+1) Write a program to make a list of alphabets and put all the elements in the other
+  list except vowels
+ 2) Write a program to create a list of words. Create another list and copy only the 
+    palindrome words in the new list.
+3) Write a program to create a list of 20 numbers. Put only those numbers divisible
+   by 2 and 3 in the another list.
+4) Write a program to create a list of 5 subject marks. put the marks greater than 60 in another list
+5) Write a program to check whether the given number is prime or not using list
+   comprehension.
