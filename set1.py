@@ -1,15 +1,27 @@
-amit = {'python' , 'java' , 'git' , 'linux'}
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
 
-rahul = {'sql' ,'c++','python','java'}
+This is a temporary script file.
+"""
 
-priya = {'sql' , 'python' , 'machinlearning','java'}
 
-unique = amit |  rahul
-print(unique)
+amit_skills = {"Python", "Java", "SQL", "Git", "Linux"}
 
-unique2 = unique ^ priya
-print(unique2)
+rahul_skills = {"Python", "C++", "SQL", "Git"}
 
+priya_skills = {"Python", "Java", "SQL", "Machine Learning"}
+
+
+#{machine learning , c++ , linux}
+all_skills = amit_skills | rahul_skills | priya_skills
+
+unique_skills = {
+    skill for skill in all_skills
+   if sum(skill in s for s in [amit_skills, rahul_skills, priya_skills]) == 1
+}
+
+print(unique_skills)
 
 
 # output = {machinlearning ,c++,git,linux}
