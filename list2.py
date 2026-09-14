@@ -25,8 +25,8 @@ for i in alp:
 odd = [i for i in range(1,21) if i%2 != 0]
 even = [i for i in range(1,21) if i%2 == 0]
 
-# print(odd)
-# print(even)
+print(odd)
+print(even)
 
 # list comprehension 
 
