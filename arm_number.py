@@ -8,7 +8,6 @@ while num > 0:
    digit = num % 10
    arm_number += digit ** length
    num =  num // 10
-
 print(arm_number)
 
 if arm_number == n:

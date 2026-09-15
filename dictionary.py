@@ -1,16 +1,31 @@
-Spyder Editor
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+# print(thisdict)
 
-This is a temporary script file.
- home work crate a dic of 5 student and value be name ,course ,3 sub mark 
- update dic by findin  toala mark persenteg each student :
-"""
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"])
 
+print(len(thisdict)) 
+print(type(thisdict))
 
-employee = {1:[ 101 , 'aryan' , 'accountent',50000] ,
-           2: [ 102 , 'ram' , 'telly',80000]}
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
 
-salary =0
+x = car.keys()
 
-for i in employee:
-  salary = salary + employee[i][3] 
-  print(salary,'total salary ')
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change 
+print(car)
