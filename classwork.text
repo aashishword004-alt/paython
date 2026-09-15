@@ -1,0 +1,189 @@
+Q-1 A college has two groups of students enrolled in Python and Java courses.
+
+python_students = {
+    "Amit", "Rahul", "Priya", "Neha", "Karan", "Sneha"
+}
+
+java_students = {
+    "Rahul", "Neha", "Karan", "Vivek", "Pooja", "Amit"
+}
+
+Perform the following:
+
+Find students enrolled in both courses.
+Find students enrolled only in Python.
+Find students enrolled only in Java.
+Find the list of all unique students.
+Find students who are enrolled in exactly one course.
+Check whether all Python students are also Java students.
+
+Q-2 Remove Duplicate Student Roll Numbers
+The following roll numbers were recorded during attendance:
+
+roll_numbers = [
+    101, 102, 105, 101, 103, 107, 105,
+    108, 102, 110, 103, 111, 108
+]
+
+Write a program to:
+
+Find all unique roll numbers.
+Find the total number of unique students.
+Find how many duplicate entries exist.
+Display the original list and the list after removing duplicates.
+
+Q-3 A college conducted two workshops.
+
+python_workshop = {
+    "Amit", "Priya", "Rahul", "Neha", "Karan", "Mehul"
+}
+
+ai_workshop = {
+    "Priya", "Neha", "Vivek", "Karan", "Riya", "Mehul"
+}
+
+Find:
+
+Students who attended both workshops.
+Students who attended only the Python workshop.
+Students who attended only the AI workshop.
+Students who attended at least one workshop.
+Students who attended exactly one workshop.
+
+Q-4 Common Skills Among Students
+Consider the skills of three students:
+
+amit_skills = {"Python", "Java", "SQL", "Git", "Linux"}
+
+rahul_skills = {"Python", "C++", "SQL", "Git"}
+
+priya_skills = {"Python", "Java", "SQL", "Machine Learning"}
+
+Write a program to find:
+
+Skills common to Amit and Rahul.
+Skills common to Rahul and Priya.
+Skills common to all three.
+All unique skills known by the three students.
+Skills known by Amit but not Rahul.
+
+Q-5 A customer purchased products from two categories.
+
+electronics = {
+    "Laptop", "Mobile", "Tablet", "Headphones", "Smartwatch"
+}
+
+accessories = {
+    "Headphones", "Keyboard", "Mouse", "Smartwatch", "USB Cable"
+}
+
+Perform the following:
+
+Find products appearing in both categories.
+Find products only in electronics.
+Find products only in accessories.
+Find all unique products.
+Find products belonging to exactly one category.
+
+Q-6 
+Employee Department Analysis
+An organization has employees working in different departments.
+
+python_team = {
+    "Amit", "Rahul", "Priya", "Neha", "Karan"
+}
+
+data_team = {
+    "Priya", "Neha", "Vivek", "Karan", "Riya"
+}
+
+testing_team = {
+    "Rahul", "Karan", "Vivek", "Mehul"
+}
+
+Write a program to find:
+
+Employees working in both Python and Data teams.
+Employees working in all three teams.
+Employees working only in the Python team.
+All unique employees.
+
+Q-7  Website User Login Analysis
+Two different websites recorded their users.
+
+website_A = {
+    "user101", "user102", "user103",
+    "user105", "user107", "user108"
+}
+
+website_B = {
+    "user102", "user103", "user104",
+    "user107", "user109", "user110"
+}
+
+Find:
+
+Users who logged into both websites.
+Users who logged into only Website A.
+Users who logged into only Website B.
+Total unique users.
+Users who logged into exactly one website.
+
+Q-8
+Find Unique Words in a Sentence
+Given:
+
+sentence = """
+Python is easy to learn and Python is powerful.
+Python is used for data science and web development.
+"""
+
+Write a program to:
+
+Convert the sentence into words.
+Create a set containing unique words.
+Find the total number of unique words.
+Display the unique words.
+Check whether "Python" exists in the set.
+Check whether "Java" exists in the set.
+
+Q-9
+Three students have selected subjects:
+
+student_A = {"Python", "DBMS", "OS", "Computer Networks"}
+
+student_B = {"Python", "Java", "DBMS", "AI"}
+
+student_C = {"Python", "DBMS", "AI", "Cloud Computing"}
+
+Find:
+
+Subjects selected by all three students.
+Subjects common to A and B.
+Subjects common to B and C.
+All subjects selected by at least one student.
+Subjects selected by A but not B.
+Subjects selected by exactly one student.
+
+Q-10
+A movie streaming service has categorized movies by genre.
+
+action = {
+    "RRR", "KGF", "War", "Pathaan", "Jawan"
+}
+
+comedy = {
+    "3 Idiots", "Hera Pheri", "Golmaal", "Jawan"
+}
+
+thriller = {
+    "Drishyam", "War", "Jawan", "Andhadhun"
+}
+
+Find:
+
+Movies belonging to both Action and Comedy.
+Movies belonging to Action but not Comedy.
+Movies belonging to all three genres.
+All unique movies.
+Movies belonging to exactly one genre.
