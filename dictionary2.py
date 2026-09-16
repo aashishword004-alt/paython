@@ -25,23 +25,30 @@ print(stds['S2']['marks']['Science'])
 print(stds['S3']['guardian'])
 
 #3. Calculate and print each student’s total marks (sum of all 3 subjects).
-
-count = {}
-
-for k,v in stds.items():
-    total = sum(v['marks'].values())
-    print(total)    
-    
-count[k] = {total}
-print(count)    
-
 #4. Find and print the name of the student with the highest total marks.
 
+count = {}
+high = 0
+for k,v in stds.items():
+    total = sum(v['marks'].values())
+    if total > high:
+          high = total
+          keys = k
+print(k,v['name'],high)
+
+#5. List the names of all students who scored above 80 in Math.
+
+
+for k,v in stds.items():
+     math = (v['marks']['Math'])
+     if math > 80:
+      print(k,v['name'],math)
+ 
 
 
 
 
+#6. Add a new subject, "Computer": 95, to student "S1"’s marks dictionary.
+stds["S1"]['marks']['computer'] = 95
 
-'''5. List the names of all students who scored above 80 in Math.
-6. Add a new subject, "Computer": 95, to student "S1"’s marks
-dictionary.'''
+print(stds)
