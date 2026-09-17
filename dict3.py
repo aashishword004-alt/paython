@@ -62,6 +62,6 @@ for k,v in prd.items():
 print(count)
 
 # 6. Apply a 15% discount to product "P001" — update its price in place and print the new price.
-prd["P001"]['price'] += prd["P001"]['price']*.10
+prd["P001"]['price'] -= prd["P001"]['price']*.15
 
 print(prd)
