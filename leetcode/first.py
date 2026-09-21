@@ -1,6 +1,4 @@
 '''Example 1:
-
-
 Explanation: The merged string will be merged as so:
 word1:  a   b   c
 word2:    p   q   r
@@ -13,7 +11,7 @@ Output: "apbqrs"
 Explanation: Notice that as word2 is longer, "rs" is appended to the end.
 word1:  a   b 
 word2:    p   q   r   s
-merged: a p b q   r   s
+
 
 Example 3:
 
@@ -32,11 +30,14 @@ def marge(word,word2):
     new_str = "".join(a + b for a,b in zip(word1,word2))
     print(new_str)
 
+
+
+# merged: a p b q   r   s
 w1 = 'ab'
 w2 = 'pqrs'
 
 def marge2(w1,w2):
-    new_str = "".join(a + b for a , b in zip(w1,w2,fillvalue =""))
+    new_str = "".join(a + b for a , b in zip(w1,w2))
     print(new_str)
 
 
