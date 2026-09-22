@@ -38,14 +38,50 @@ print(d)
 # print(pali)
 
 # 4.	Find the number having the highest sum of digits. If more than one number has the same highest digit sum, display all such numbers.
-
 l = [12,13,789,699,123]
-d = {}
+high = []
+result = []
+mx = 0
+n = {}
 for i in l:
-    temp = i
     total = 0
-    while i > 0:
-       digit = i % 10
-       total+=digit
-       i  = i // 10
-    d[temp] = {total}
+    n = i
+    while n > 0:
+     digit = n % 10
+     total+=digit
+     n = n // 10 
+    high.append(total)
+    for k in high:
+     if k > mx:
+        mx = k
+    if high == mx:
+      result.append(i)
+
+
+print(result)
+
+
+
+
+# d = {}
+# for i in l:
+#     temp = i
+#     total = 0
+#     while i > 0:
+#        digit = i % 10
+#        total+=digit
+#        i  = i // 10
+#     d[temp] = {total}
+
+# x = []
+# for k,v in d.items():
+#    for y in v:
+#       x.append(y)
+
+# count = {}
+# for v in x:
+#     count[v] = count.get(v,0) + 1
+
+
+# print(count)
+# dup = [n for n , c in count.items() if c > 1]
