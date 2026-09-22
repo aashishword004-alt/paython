@@ -25,16 +25,27 @@ print(d)
 '''
 # 2.	Create a tuple containing all the palindrome numbers from the given list. 
 
-l1 = [123,153,154,151,161,717]
-l2 = []
-for i in l1:
-  newstr = str(i)
-  if newstr == newstr[::-1]:
-     l2.append(newstr)
+# l1 = [123,153,154,151,161,717]
+# l2 = []
+# for i in l1:
+#   newstr = str(i)
+#   if newstr == newstr[::-1]:
+#      l2.append(newstr)
 
-num = list(map(int,l2))
+# num = list(map(int,l2))
 
-pali = tuple(num)
-print(pali)
+# pali = tuple(num)
+# print(pali)
 
+# 4.	Find the number having the highest sum of digits. If more than one number has the same highest digit sum, display all such numbers.
 
+l = [12,13,789,699,123]
+d = {}
+for i in l:
+    temp = i
+    total = 0
+    while i > 0:
+       digit = i % 10
+       total+=digit
+       i  = i // 10
+    d[temp] = {total}
