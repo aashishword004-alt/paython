@@ -2,7 +2,7 @@
 1.	Create a dictionary having each number as the key and its sum of digits as the value. 
 2.	Create a tuple containing all the palindrome numbers from the given list. 
 3.	Create a set containing all the unique digits occurring in the given numbers. 
-4.	Find the number having the highest sum of digits. If more than one number has the same highest digit sum, display all such numbers. 
+4.	Find the number having the total_sumest sum of digits. If more than one number has the same total_sumest digit sum, display all such numbers. 
 5.	Display all numbers which are both palindrome and divisible by the sum of their digits.
 '''
 
@@ -36,13 +36,14 @@ print(d)
 
 # pali = tuple(num)
 # print(pali)
-
-# 4.	Find the number having the highest sum of digits. If more than one number has the same highest digit sum, display all such numbers.
-l = [12,13,789,699,123]
-high = []
+'''
+# 4.	Find the number having the total_sumest sum of digits. If more than one number has the same total_sumest digit sum, display all such numbers.
+l = [12,13,699,123,987,789,996]
+total_sum = []
 result = []
+new_l = []
 mx = 0
-n = {}
+new = {}
 for i in l:
     total = 0
     n = i
@@ -50,19 +51,23 @@ for i in l:
      digit = n % 10
      total+=digit
      n = n // 10 
-    high.append(total)
-    for k in high:
-     if k > mx:
-        mx = k
-    if high == mx:
-      result.append(i)
+    new[i] = total
+    total_sum.append(total)
+    if total == mx:
+        result.append(i)
+    for k in total_sum:
+        if k > mx:
+         mx = k 
+   # print(i, end=' ')
+    
+for k,v in new.items():
+    if mx == v:
+      new_l.append(k)
+         
+print(mx)
+print(new_l)
 
-
-print(result)
-
-
-
-
+'''
 # d = {}
 # for i in l:
 #     temp = i
@@ -85,3 +90,7 @@ print(result)
 
 # print(count)
 # dup = [n for n , c in count.items() if c > 1]
+
+# 5.	Display all numbers which are both palindrome and divisible by the sum of their digits.
+
+l = [121,13,699,123,987,789,996]
