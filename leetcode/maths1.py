@@ -5,11 +5,6 @@ Explanation: We can reorder the elements
 
 
 l = [3,5,1]
-1,3,5
-1,3,5,
-
-1 - 3 = -2 
-3 - 5 = -2
 def array(list):
     list.sort()
     number = False
@@ -22,3 +17,8 @@ def array(list):
       
 
 array(l)
+
+''' Input: arr = [1,2,4]
+Output: false
+Explanation: There is no way to reorder the elements to obtain an arithmetic progression.'''
+
